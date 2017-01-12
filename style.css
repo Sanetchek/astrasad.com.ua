@@ -1,0 +1,112 @@
+
+
+/*************Fonts************/
+@font-face {
+    font-family: 'Anglecia';
+    src: url(fonts/AngleciaProDisplay-Regular.otf);
+}
+@font-face {
+    font-family: 'Myriad';
+    src: url(fonts/MyriadPro-Regular.otf);
+}
+@font-face {
+    font-family: 'RobotoLight';
+    src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+/*************Settings************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Anglecia', sans-serif;
+    color: #1D1D1B;
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #1D1D1B;
+    border: none;
+}
+
+/*************Header************/
+#header {
+    padding: 18px 0 29px;
+}
+
+#header ul li {
+    display: inline-block;
+
+}
+
+.head-info {
+    font-family: 'RobotoRegular', sans-serif;
+    font-size: 14px;
+}
+
+.languages {
+    float: left;
+    padding-left: 4px;
+}
+
+.languages li + li, .contact-info li + li {
+    margin-left: 24px;
+}
+
+.languages a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1D1D1B;
+}
+
+.languages a:hover {
+    color: #4A4A49;
+    border-bottom: 1.5px solid #CCB659;
+}
+
+.contact-info {
+    float: right;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #1D1D1B;
+}
+
+.contact-info a:hover {
+    border-bottom: 1.5px solid #CCB659;
+}
+
+.contact-info img {
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+}
+
+.nav-menu {
+    clear: both;
+}
+
+.nav-menu div {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.nav-menu .logo img {
+    width: 112px;
+}
+
+/*************Main************/
+
+/*************Footer************/
