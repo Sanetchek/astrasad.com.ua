@@ -4,7 +4,31 @@
     <meta charset="UTF-8">
     <title>АстраСад</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+    <link rel="stylesheet" href="lightslider/css/lightslider.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="lightslider/js/lightslider.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightSlider").lightSlider({
+                item: 1,
+                slideMove: 1,
+                slideMargin: 10,
+                loop: true,
+                controls: true,
+                thumbItem:6,
+                pager: true,
+                vThumbWidth:145,
+                galleryMargin:24,
+                thumbMargin:38.61,
+                gallery: true,
+                currentPagerPosition: 'middle',
+
+                onSliderLoad: function (el) {
+                    $('.lSSlideWrapper').after('<h3>Избранные работы</h3>');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <header id="header" class="container">
@@ -37,7 +61,21 @@
                 <ul>
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">О нас</a></li>
-                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Услуги</a>
+                        <ul>
+                            <li><a href="#">- допроектные работы на объекте</a></li>
+                            <li><a href="#">- Ландшафтное проектирование</a></li>
+                            <li><a href="#">- разработка концепции</a></li>
+                            <li><a href="#">- ландшафтный дизайн</a></li>
+                            <li><a href="#">- Посадка растений</a></li>
+                            <li><a href="#">- ландшафтное освещение</a></li>
+                            <li><a href="#">- автоматический полив</a></li>
+                            <li><a href="#">- комплексный уход за садом</a></li>
+                            <li><a href="#">- фитодизайн интерьера</a></li>
+                            <li><a href="#">- оформление сада и дома к праздникам</a></li>
+                            <li><a href="#">- креативная флористика</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="logo">
@@ -54,11 +92,122 @@
             </div>
         </nav>
     </header>
-    <main>
-
+    <main id="main">
+        <div class="wavegrid">
+            <div class="slider">
+                <ul id="lightSlider">
+                    <li data-thumb="images/red_slope_without_a_track.jpg">
+                        <img src="images/red_slope_without_a_track.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/B.jpg">
+                        <img src="images/B.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/light.jpg">
+                        <img src="images/light.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/red_slope_without_a_track.jpg">
+                        <img src="images/red_slope_without_a_track.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/B.jpg">
+                        <img src="images/B.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/light.jpg">
+                        <img src="images/light.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/red_slope_without_a_track.jpg">
+                        <img src="images/red_slope_without_a_track.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/B.jpg">
+                        <img src="images/B.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/light.jpg">
+                        <img src="images/light.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/red_slope_without_a_track.jpg">
+                        <img src="images/red_slope_without_a_track.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/B.jpg">
+                        <img src="images/B.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/light.jpg">
+                        <img src="images/light.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/red_slope_without_a_track.jpg">
+                        <img src="images/red_slope_without_a_track.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/B.jpg">
+                        <img src="images/B.jpg" alt="4">
+                    </li>
+                    <li data-thumb="images/light.jpg">
+                        <img src="images/light.jpg" alt="4">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="offers container">
+            <h3>Мы предлагаем</h3>
+            <div class="offers-block">
+                <div class="offer">
+                    <a href="#">
+                        <img src="images/offer-1.jpg" alt="offer1">
+                        <h2>Ландшафтный дизайн</h2>
+                    </a>
+                </div>
+                <div class="offer">
+                    <a href="#">
+                        <img src="images/offer-2.jpg" alt="offer2">
+                        <h2>Ландшафтное проектирование</h2>
+                    </a>
+                </div>
+                <div class="offer">
+                    <a href="#">
+                        <img src="images/offer-3.jpg" alt="offer3">
+                        <h2>Уход за садом</h2>
+                    </a>
+                </div>
+                <div class="offer">
+                    <a href="#">
+                        <img src="images/offer-4.jpg" alt="offer4">
+                        <h2>Зеленые стены</h2>
+                    </a>
+                </div>
+                <div class="offer">
+                    <a href="#">
+                        <img src="images/offer-5.jpg" alt="offer5">
+                        <h2>Создание газонов</h2>
+                    </a>
+                </div>
+                <div class="offer">
+                    <a href="#">
+                        <img src="images/offer-6.jpg" alt="offer6">
+                        <h2>Ландшафтное освещение</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-
+    <footer id="footer" class="wavegrid">
+        <div class="container">
+            <div class="copyrights">
+                <img src="images/logo.svg" alt="Logotype">
+                <section>
+                    <div>Астрасад 2017 &copy;</div>
+                    <div>Все права защищены</div>
+                </section>
+            </div>
+            <div class="footer-contact-info">
+                <span>Связаться с нами:</span>
+                <ul>
+                    <li>
+                        <a href="mailto:info@astrasad.com.ua">info@astrasad.com.ua</a>
+                    </li>
+                    <li>
+                        <a href="tel:+380687074141">+380 68 707 41 41</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
     </footer>
 </body>
 </html>
