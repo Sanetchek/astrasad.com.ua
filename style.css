@@ -42,7 +42,7 @@ a {
 
 /*************Header************/
 #header {
-    padding: 18px 0 29px;
+    padding: 17px 0 29px;
 }
 
 #header ul li {
@@ -53,6 +53,7 @@ a {
 .head-info {
     font-family: 'RobotoRegular', sans-serif;
     font-size: 14px;
+    height: 23px;
 }
 
 .languages {
@@ -96,6 +97,9 @@ a {
 
 .nav-menu {
     clear: both;
+    text-align: center;
+    padding: 0 3.3%;
+    height: 85px;
 }
 
 .nav-menu div {
@@ -103,8 +107,42 @@ a {
     margin: 0 auto;
 }
 
+.nav-menu .logo {
+    width: 25%;
+    height: 85px;
+}
+
 .nav-menu .logo img {
     width: 112px;
+}
+
+.nav-menu .nav-menu-left {
+    width: 36%;
+    float: left;
+    margin-left: 0.75%;
+}
+
+.nav-menu ul li {
+    width: 33%;
+    float: left;
+}
+
+.nav-menu ul li:first-child {
+    text-align: left;
+}
+.nav-menu ul li:last-child {
+    text-align: right;
+}
+
+
+.nav-menu .nav-menu-right {
+    width: 37%;
+    float: right;
+}
+
+.nav-menu .nav-menu-right, .nav-menu .nav-menu-left {
+    height: 85px;
+    line-height: 85px;
 }
 
 /*************Main************/
