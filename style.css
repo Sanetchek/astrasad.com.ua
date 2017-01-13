@@ -79,7 +79,7 @@ a {
     color: #1D1D1B;
 }
 
-.languages a:hover {
+.languages a:hover, .languages li.current-menu-item a {
     color: #4A4A49;
     border-bottom: 1.5px solid #CCB659;
 }
@@ -98,7 +98,7 @@ a {
     padding-bottom: 2px;
 }
 
-.contact-info a:hover, .contact-info .current-menu-item a {
+.contact-info a:hover {
     border-bottom: 1.5px solid #CCB659;
 }
 
@@ -145,10 +145,10 @@ a {
     border-bottom: 1.5px solid #CCB659;
 }
 
-.nav-menu ul li:first-child {
+.nav-menu > ul li:first-child {
     text-align: left;
 }
-.nav-menu ul li:last-child {
+.nav-menu > ul li:last-child {
     text-align: right;
 }
 
@@ -162,19 +162,29 @@ a {
     line-height: 85px;
 }
 
-.nav-menu ul li ul {
+.nav-menu ul li:hover > ul {
+    visibility:visible;
+    opacity:1;
+    transition-delay:0s;
+}
+
+.nav-menu ul li > ul {
     margin-top: -30px;
     width: 300px;
     z-index: 100;
     position: absolute;
     padding: 20px;
     background-color: #fff;
+    font-size: 14px;
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0s linear 0.5s,opacity 0.5s linear;
 }
 
 .nav-menu ul li > ul li {
     width: 100%;
     text-align: left;
-    line-height: 20px;
+    line-height: 24px;
 }
 
 /*************Main************/
