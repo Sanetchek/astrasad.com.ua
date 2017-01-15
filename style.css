@@ -213,6 +213,8 @@ a {
 
 #lightSlider li {
     background-position: bottom;
+    height: 550px;
+    background-size: cover;
 }
 
 #main .lSSlideOuter  h3 {
