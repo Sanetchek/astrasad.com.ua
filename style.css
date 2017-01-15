@@ -211,8 +211,8 @@ a {
     box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
 }
 
-.lightSlider.lsGrab > * {
-    background-position: center;
+#lightSlider li {
+    background-position: bottom;
 }
 
 #main .lSSlideOuter  h3 {
