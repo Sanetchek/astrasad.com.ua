@@ -15,7 +15,6 @@
     -ms-user-select: none;
     user-select: none;
     position: relative;
-    top: -5px;
 }
 .lightSlider:before, .lightSlider:after {
     content: " ";
