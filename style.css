@@ -272,6 +272,7 @@ a {
 /*************Single************/
 #content {
     padding: 0 0 36px;
+    font-family: 'RobotoRegular', sans-serif;
 }
 
 .content-img {
@@ -288,8 +289,12 @@ a {
 }
 
 .content-single p {
-    font-family: 'RobotoRegular', sans-serif;
     padding: 10px 0;
+    font-family: 'RobotoRegular', sans-serif;
+}
+
+.content-single ul {
+    margin: 15px 0 15px 50px;
 }
 
 /*************Footer************/
