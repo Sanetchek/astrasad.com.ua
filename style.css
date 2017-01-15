@@ -205,7 +205,7 @@ a {
 #lightSlider {
     position: relative;
     top: 5px;
-    max-height: 550px;
+    max-height: 420px;
     -webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
@@ -213,8 +213,8 @@ a {
 
 #lightSlider li {
     background-position: bottom;
-    height: 550px;
     background-size: cover;
+    height: 420px;
 }
 
 #main .lSSlideOuter  h3 {
@@ -267,6 +267,29 @@ a {
     text-align: center;
     font-size: 16px;
     font-weight: normal;
+}
+
+/*************Single************/
+#content {
+    padding: 0 0 36px;
+}
+
+.content-img {
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    height: 420px;
+}
+
+.content-single h1 {
+    padding: 30px 80px;
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 34px;
+}
+
+.content-single p {
+    font-family: 'RobotoRegular', sans-serif;
+    padding: 10px 0;
 }
 
 /*************Footer************/
