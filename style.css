@@ -293,7 +293,7 @@ a {
     font-family: 'RobotoRegular', sans-serif;
 }
 
-.content-single ul {
+.content-single ul, .content-single ol {
     margin: 15px 0 15px 50px;
 }
 
