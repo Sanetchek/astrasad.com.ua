@@ -297,6 +297,16 @@ a {
     margin: 15px 0 15px 50px;
 }
 
+.content-single ul li, .content-single ol li {
+    padding: 3px 20px;
+}
+
+blockquote {
+    display: block;
+    padding: 1em 40px;
+    background: url(images/quote.gif) no-repeat 0px 20px;
+}
+
 /*************Footer************/
 #footer {
     padding: 21px 0;
