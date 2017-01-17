@@ -238,6 +238,16 @@
                 $(this).children('ul').slideToggle("slow");
                 return false;
             });
+            $('#toggle-button img').bind('click',function(){
+                if ( $('#toggle-button img').attr('src') === 'images/menu.svg' ) {
+                    $('#toggle-button img').attr('src', 'images/cross.svg');
+                } else {
+                    $('#toggle-button img').attr('src', 'images/menu.svg');
+                }
+
+                $('#toggle-nav-menu').slideToggle("slow");
+                return false;
+            });
         });
     </script>
 </body>
