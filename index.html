@@ -13,14 +13,28 @@
                 item: 1,
                 slideMove: 1,
                 slideMargin: 10,
-                thumbItem: 6,
                 loop: true,
                 controls: true,
                 pager: true,
                 galleryMargin:24,
                 thumbMargin:38.61,
+                thumbItem:6,
                 gallery: true,
                 enableDrag:false,
+                responsive : [
+                    {
+                        breakpoint:1080,
+                        settings: {
+                            thumbItem:4,
+                        }
+                    },
+                    {
+                        breakpoint:720,
+                        settings: {
+                            thumbItem:2,
+                        }
+                    }
+                ],
 
                 onSliderLoad: function (el) {
                     $('.lSGallery').wrap('<div class="wrapper"></div>');
@@ -56,24 +70,63 @@
                 </ul>
             </div>
         </div>
-        <nav class="nav-menu">
+        <nav id="toggle-menu">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="Logotype">
+                </a>
+            </div>
+            <div id="toggle-button"><img src="images/menu.svg" alt="menu"></div>
+            <nav id="toggle-nav-menu">
+                <div class="nav-menu-left">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a>
+                            <ul>
+                                <li><a href="#">Допроектные работы на объекте</a></li>
+                                <li><a href="#">Ландшафтное проектирование</a></li>
+                                <li><a href="#">Разработка концепции</a></li>
+                                <li><a href="#">Ландшафтный дизайн</a></li>
+                                <li><a href="#">Посадка растений</a></li>
+                                <li><a href="#">Ландшафтное освещение</a></li>
+                                <li><a href="#">Автоматический полив</a></li>
+                                <li><a href="#">Комплексный уход за садом</a></li>
+                                <li><a href="#">Фитодизайн интерьера</a></li>
+                                <li><a href="#">Оформление сада и дома к праздникам</a></li>
+                                <li><a href="#">Креативная флористика</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-menu-right">
+                    <ul>
+                        <li><a href="#">Работы</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+
+        <nav id="nav-menu">
             <div class="nav-menu-left">
                 <ul>
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">О нас</a></li>
                     <li><a href="#">Услуги</a>
                         <ul>
-                            <li><a href="#">- Допроектные работы на объекте</a></li>
-                            <li><a href="#">- Ландшафтное проектирование</a></li>
-                            <li><a href="#">- Разработка концепции</a></li>
-                            <li><a href="#">- Ландшафтный дизайн</a></li>
-                            <li><a href="#">- Посадка растений</a></li>
-                            <li><a href="#">- Ландшафтное освещение</a></li>
-                            <li><a href="#">- Автоматический полив</a></li>
-                            <li><a href="#">- Комплексный уход за садом</a></li>
-                            <li><a href="#">- Фитодизайн интерьера</a></li>
-                            <li><a href="#">- Оформление сада и дома к праздникам</a></li>
-                            <li><a href="#">- Креативная флористика</a></li>
+                            <li><a href="#">Допроектные работы на объекте</a></li>
+                            <li><a href="#">Ландшафтное проектирование</a></li>
+                            <li><a href="#">Разработка концепции</a></li>
+                            <li><a href="#">Ландшафтный дизайн</a></li>
+                            <li><a href="#">Посадка растений</a></li>
+                            <li><a href="#">Ландшафтное освещение</a></li>
+                            <li><a href="#">Автоматический полив</a></li>
+                            <li><a href="#">Комплексный уход за садом</a></li>
+                            <li><a href="#">Фитодизайн интерьера</a></li>
+                            <li><a href="#">Оформление сада и дома к праздникам</a></li>
+                            <li><a href="#">Креативная флористика</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -176,11 +229,16 @@
 
 
     <script  type="text/javascript">
-        /*jQuery(document).ready(function ($){
-            if ( $( window ).width() < 1200 ) {
+        jQuery(document).ready(function ($){
+            /*if ( $( window ).width() < 1200 ) {
                 $('#slider > li').css('background-image', "url(' <?php the_post_thumbnail_url('thumbnail'); ?> ')");
-            }
-        });*/
+            } */
+
+            $('#toggle-menu div > ul li').has('ul').bind('click',function(){
+                $(this).children('ul').slideToggle("slow");
+                return false;
+            });
+        });
     </script>
 </body>
 </html>
