@@ -271,9 +271,6 @@ a img {
     font-size: 22px;
     font-weight: normal;
 }
-    .lSSlideOuter .lSPager.lSGallery li + li {
-        margin-left: 1.5%;
-    }
     #main .lSSlideOuter  h3:before,
     #main .lSSlideOuter  h3:after {
         content: '';
