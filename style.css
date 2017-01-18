@@ -436,7 +436,7 @@ blockquote {
     }
 }
 
-@media all and (max-width: 625px) {
+@media all and (max-width: 670px) {
     #header .contact-info ul li {
         display: block;
         text-align: right;
