@@ -37,6 +37,9 @@ body {
 a {
     text-decoration: none;
     color: #1D1D1B;
+}
+
+a img {
     border: none;
 }
 
@@ -50,7 +53,7 @@ a {
 
 /*************Header************/
 #header {
-    padding: 17px 0 29px;
+    padding: 7px 0 29px;
 }
     #header ul li {
         display: inline-block;
@@ -60,7 +63,7 @@ a {
 .head-info {
     font-family: 'RobotoRegular', sans-serif;
     font-size: 14px;
-    height: 23px;
+    margin-bottom: 15px;
 }
 
 .languages {
@@ -106,7 +109,7 @@ a {
     text-align: center;
     padding: 0 3.3%;
     height: 85px;
-    font-size: 18px;
+    font-size: 20px;
 }
     #nav-menu div {
         display: inline-block;
@@ -219,25 +222,30 @@ a {
     #toggle-menu div > ul li > ul li a:before {
         content: '- ';
     }
+    #toggle-menu div > ul li > ul li:hover {
+        background-color: #ccb658;
+    }
 
 /*************Main************/
 #main .slider {
     margin: 0 auto;
-    padding-bottom: 42.57px;
     position: relative;
     top: -5px;
 }
 
 .wrapper {
-    max-width: 1060px;
-    margin: 0 auto;
+    position: absolute;
+    max-width: 607px;
     overflow: hidden;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -22%;
 }
 
 #lightSlider {
     position: relative;
     top: 5px;
-    max-height: 420px;
+    max-height: 520px;
     -webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
@@ -245,7 +253,15 @@ a {
     #lightSlider li {
         background-position: bottom;
         background-size: cover;
-        height: 420px;
+        height: 520px;
+    }
+    #lightSlider li .overlay {
+        background-color: rgba(0,0,0,0.03);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
     }
 
 #main .lSSlideOuter  h3 {
@@ -255,6 +271,9 @@ a {
     font-size: 22px;
     font-weight: normal;
 }
+    .lSSlideOuter .lSPager.lSGallery li + li {
+        margin-left: 1.5%;
+    }
     #main .lSSlideOuter  h3:before,
     #main .lSSlideOuter  h3:after {
         content: '';
@@ -286,7 +305,6 @@ a {
 #main .offers-block {
     text-align: center;
 }
-
     #main .offers-block .offer {
         display: inline-table;
         width: 140px;
@@ -314,7 +332,7 @@ a {
         background-attachment: fixed;
         background-position: bottom;
         background-size: cover;
-        height: 420px;
+        height: 520px;
     }
 
 .content-single {}
@@ -347,30 +365,25 @@ blockquote {
 #footer {
     padding: 21px 0;
     font-family: 'RobotoLight', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 #footer .copyrights {
     float: left;
-    font-size: 11px;
 }
-    #footer .copyrights img {
-        width: 79px;
-        height: 59.86px;
-        float: left;
-    }
     #footer .copyrights > section {
-        display: inline-table;
-        margin: 27px 0px 0px 20px;
+        margin-top: 10px;
     }
-    #footer .copyrights > section div + div {
-        margin-top: 5px;
+    #footer .copyrights div {
+        display: inline-block;
+        margin-right: 20px;
     }
-    #footer .footer-contact-info {
-        float: right;
-        font-size: 12px;
-        padding-top: 10px;
-        text-align: right;
-    }
+#footer .footer-contact-info {
+    float: right;
+    padding-top: 10px;
+    text-align: right;
+}
     #footer .footer-contact-info a {
         text-decoration: none;
         color: #1D1D1B;
@@ -378,19 +391,11 @@ blockquote {
     #footer .footer-contact-info a:hover {
         border-bottom: 1.5px solid #CCB659;
     }
-    #footer .footer-contact-info img {
-        vertical-align: middle;
-        width: 18px;
-        height: 18px;
-    }
-    #footer .footer-contact-info ul {
-        margin-top: 6px;
-    }
     #footer .footer-contact-info ul li {
-        display: block;
+        display: inline-block;
     }
     #footer .footer-contact-info ul li + li {
-        margin-top: 4px;
+        margin-left: 10px;
     }
     #footer .footer-contact-info ul li:first-child a {
         border-bottom: 1.5px solid #CCB659;
@@ -399,17 +404,24 @@ blockquote {
 
 @media all and (max-width: 1080px) {
     #lightSlider {
-        max-height: 300px;
+        max-height: 400px;
     }
     #lightSlider li {
-        height: 300px;
+        height: 400px;
     }
     .wrapper {
-        max-width: 696px;
+        max-width: 481px;
+        margin-left: -20%;
+    }
+}
+@media all and (max-width: 900px) {
+    .wrapper {
+        max-width: 470px;
+        margin-left: -26%;
     }
 }
 
-@media all and (max-width: 720px) {
+@media all and (max-width: 757px) {
     #nav-menu {
         display: none;
     }
@@ -417,6 +429,22 @@ blockquote {
         display: block;
     }
     .wrapper {
-        max-width: 329px;
+        max-width: 350px;
+        margin-left: -24%;
     }
+}
+
+@media all and (max-width: 625px) {
+    #header .contact-info ul li {
+        display: block;
+        text-align: right;
+    }
+    #footer .copyrights {
+        margin-top: 35px;
+    }
+    #footer .footer-contact-info ul li {
+        display: block;
+        margin-bottom: 3px;
+    }
+
 }
