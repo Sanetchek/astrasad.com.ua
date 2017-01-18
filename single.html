@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АстраСад</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="lightslider/css/lightslider.css">
@@ -9,148 +10,192 @@
     <script type="text/javascript" src="lightslider/js/lightslider.js"></script>
 </head>
 <body>
-<header id="header" class="container">
-    <div class="head-info">
-        <div class="languages">
-            <ul>
-                <li>
-                    <a href="#">Рус</a>
-                </li>
-                <li class="current-menu-item">
-                    <a href="#">Укр</a>
-                </li>
-            </ul>
+    <header id="header" class="container">
+        <div class="head-info">
+            <div class="languages">
+                <ul>
+                    <li>
+                        <a href="#">Рус</a>
+                    </li>
+                    <li class="current-menu-item">
+                        <a href="#">Укр</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <ul>
+                    <li>
+                        <img src="images/phone.svg" alt="phone number" >
+                        <a href="tel:+380687074141">+380 68 707 41 41</a>
+                    </li>
+                    <li>
+                        <a href="tel:+380443601685">+380 44 360 16 85</a>
+                    </li>
+                    <li>
+                        <img src="images/mail.svg" alt="email address" >
+                        <a href="mailto:info@astrasad.com.ua">info@astrasad.com.ua</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
         </div>
-        <div class="contact-info">
-            <ul>
-                <li>
-                    <img src="images/phone.svg" alt="phone number" >
-                    <a href="tel:+380687074141">+380 68 707 41 41</a>
-                </li>
-                <li>
-                    <img src="images/mail.svg" alt="email address" >
-                    <a href="mailto:info@astrasad.com.ua">info@astrasad.com.ua</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <nav class="nav-menu">
-        <div class="nav-menu-left">
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Услуги</a>
+        <nav id="toggle-menu">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="Logotype">
+                </a>
+            </div>
+            <div id="toggle-button"><img src="images/menu.svg" alt="menu"></div>
+            <nav id="toggle-nav-menu">
+                <div class="nav-menu-left">
                     <ul>
-                        <li><a href="#">- Допроектные работы на объекте</a></li>
-                        <li><a href="#">- Ландшафтное проектирование</a></li>
-                        <li><a href="#">- Разработка концепции</a></li>
-                        <li><a href="#">- Ландшафтный дизайн</a></li>
-                        <li><a href="#">- Посадка растений</a></li>
-                        <li><a href="#">- Ландшафтное освещение</a></li>
-                        <li><a href="#">- Автоматический полив</a></li>
-                        <li><a href="#">- Комплексный уход за садом</a></li>
-                        <li><a href="#">- Фитодизайн интерьера</a></li>
-                        <li><a href="#">- Оформление сада и дома к праздникам</a></li>
-                        <li><a href="#">- Креативная флористика</a></li>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a>
+                            <ul>
+                                <li><a href="#">Допроектные работы на объекте</a></li>
+                                <li><a href="#">Ландшафтное проектирование</a></li>
+                                <li><a href="#">Разработка концепции</a></li>
+                                <li><a href="#">Ландшафтный дизайн</a></li>
+                                <li><a href="#">Посадка растений</a></li>
+                                <li><a href="#">Ландшафтное освещение</a></li>
+                                <li><a href="#">Автоматический полив</a></li>
+                                <li><a href="#">Комплексный уход за садом</a></li>
+                                <li><a href="#">Фитодизайн интерьера</a></li>
+                                <li><a href="#">Оформление сада и дома к праздникам</a></li>
+                                <li><a href="#">Креативная флористика</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+                <div class="nav-menu-right">
+                    <ul>
+                        <li><a href="#">Работы</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+
+        <nav id="nav-menu">
+            <div class="nav-menu-left">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Услуги</a>
+                        <ul>
+                            <li><a href="#">Допроектные работы на объекте</a></li>
+                            <li><a href="#">Ландшафтное проектирование</a></li>
+                            <li><a href="#">Разработка концепции</a></li>
+                            <li><a href="#">Ландшафтный дизайн</a></li>
+                            <li><a href="#">Посадка растений</a></li>
+                            <li><a href="#">Ландшафтное освещение</a></li>
+                            <li><a href="#">Автоматический полив</a></li>
+                            <li><a href="#">Комплексный уход за садом</a></li>
+                            <li><a href="#">Фитодизайн интерьера</a></li>
+                            <li><a href="#">Оформление сада и дома к праздникам</a></li>
+                            <li><a href="#">Креативная флористика</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="Logotype">
+                </a>
+            </div>
+            <div class="nav-menu-right">
+                <ul>
+                    <li><a href="#">Работы</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <div id="content">
+            <div class="content-img" style="background-image: url('images/red_slope_without_a_track.jpg')"></div>
+            <div class="content-single container">
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis, est fuga id incidunt iusto laboriosam minima natus, nisi optio quidem quis quod ratione repellat suscipit temporibus ut veniam voluptatibus?</p>
+                <h5>Lorem ipsum dolor sit amet, consectetur.</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis, est fuga id incidunt iusto laboriosam minima natus, nisi optio quidem quis quod ratione repellat suscipit temporibus ut veniam voluptatibus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis, est fuga id incidunt iusto laboriosam minima natus, nisi optio quidem quis quod ratione repellat suscipit temporibus ut veniam voluptatibus?</p>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque beatae illo neque praesentium
+                    provident qui quod recusandae sapiente voluptates?</h4>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Dolorem error id neque numquam!</li>
+                    <li>Animi cupiditate eaque iure minus.</li>
+                    <li>Accusantium ex iure quia sed!</li>
+                    <li>Ad blanditiis illo minima veniam?</li>
+                </ul>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis, hic illo ipsa ipsam
+                    repellendus!</h5>
+                <ol>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ipsam ipsum iste provident quam
+                        voluptates voluptatibus voluptatum! Cumque dolores illum neque placeat quia rem voluptas? Atque
+                        deserunt expedita maiores praesentium!
+                    </li>
+                    <li>Esse itaque sed vel. Ex fuga, hic magnam nobis nostrum quas quia. Adipisci beatae consectetur dicta
+                        distinctio dolorem ducimus, ea earum ex harum inventore, magnam minima possimus repellendus, sequi
+                        voluptas.
+                    </li>
+                    <li>Adipisci aliquid animi aut delectus deleniti dolorem eligendi est eveniet expedita facilis illo
+                        impedit incidunt laborum nihil nobis perferendis perspiciatis quae quas recusandae sequi sit, totam
+                        unde vel veniam vero.
+                    </li>
+                    <li>Adipisci asperiores commodi dicta, dignissimos distinctio doloremque, error eveniet expedita fugit
+                        iste minima nihil nostrum nulla numquam optio perferendis quaerat quibusdam quo reprehenderit saepe
+                        sapiente suscipit tempora vel velit voluptas!
+                    </li>
+                    <li>A aspernatur consequuntur debitis dolor enim fugiat illum ipsam, pariatur qui, quos repellat rerum
+                        sunt tempore unde ut. Aperiam dolor earum nihil sit tempore. Dolorum eveniet natus quasi ut
+                        voluptas.
+                    </li>
+                </ol>
+                <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam animi aspernatur consectetur deleniti ea enim ex fugiat itaque nesciunt, nihil, nostrum placeat praesentium quam quisquam quos sapiente soluta unde!</span><span>Quisquam sed tempora tempore? Laboriosam, optio, provident. Aliquam aperiam aut consectetur debitis doloremque, ducimus ipsam laudantium, maxime minus molestiae nostrum odit porro quis repellat totam vero voluptatibus voluptatum. Earum, nihil.</span><span>Architecto consequatur deleniti doloremque excepturi facere ipsum, officiis perferendis perspiciatis quo ratione, repellat, temporibus vitae. Accusantium aut commodi esse harum iste nam nostrum similique tenetur ut. Maiores quos voluptas voluptatum.</span><span>Accusamus aliquid aut, commodi consequuntur cumque dignissimos enim eos, est maxime nihil nobis non nostrum optio saepe tempora velit vitae! Accusantium aperiam asperiores autem cumque distinctio error inventore qui vitae.</span><span>Aliquam animi, assumenda, beatae blanditiis consequatur culpa cumque cupiditate harum hic illo inventore maxime nesciunt omnis optio perferendis quidem quis quo repudiandae sequi sit ut vel vero! Autem, doloremque, quo.</span>
+                </p>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci exercitationem natus neque non tempore? A alias asperiores assumenda, cum delectus dignissimos distinctio dolores expedita in, pariatur quaerat quam sed voluptates!</span><span>Adipisci autem debitis deleniti enim ex excepturi laborum magni minus necessitatibus odio porro, quae quas quidem quisquam, reiciendis rem sed suscipit, vero. Alias aliquid aperiam atque esse eum nihil similique.</span>
+                </p>
+                <blockquote cite="http://www.worldwildlife.org/who/index.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis consequuntur corporis enim esse, illo inventore iure nemo nulla optio pariatur quos temporibus, veritatis! Dolorem enim eveniet molestias nesciunt ratione!</blockquote>
+                <h4>Lorem ipsum dolor.</h4>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad consequuntur deleniti eos, esse expedita fugit modi molestias nobis optio placeat provident quas quasi quis ratione reiciendis rem tempora voluptates!</span><span>At blanditiis ea labore odio, optio quam recusandae veniam! Ad assumenda cupiditate maxime repudiandae voluptatum. Asperiores ducimus eaque eius expedita in magnam perspiciatis sunt tempore? Asperiores culpa cum quidem sapiente.</span>
+                </p>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, vitae?</h5>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium cum distinctio doloremque nemo non quia quis sint. Dolorem, doloribus eum iusto labore maiores necessitatibus officiis quam sapiente? Nam, tempore!</span><span>Accusantium alias asperiores beatae dolor, doloremque eligendi esse excepturi, exercitationem impedit in ipsum magnam magni nemo neque nulla, pariatur perspiciatis placeat praesentium quasi quod rem rerum sapiente soluta suscipit vero?</span>
+                </p>
+            </div>
         </div>
-        <div class="logo">
-            <a href="#">
-                <img src="images/logo.svg" alt="Logotype">
-            </a>
+    </main>
+    <footer id="footer" class="wavegrid">
+        <div class="container">
+            <div class="copyrights">
+                <section>
+                    <div>Астрасад 2017 &copy;</div>
+                    <div>Все права защищены</div>
+                </section>
+            </div>
+            <div class="footer-contact-info">
+                <ul>
+                    <li>
+                        <a href="mailto:info@astrasad.com.ua">info@astrasad.com.ua</a>
+                    </li>
+                    <li>
+                        <a href="tel:+380687074141">+380 68 707 41 41</a>
+                    </li>
+                    <li>
+                        <a href="tel:+380443601685">+380 44 360 16 85</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
         </div>
-        <div class="nav-menu-right">
-            <ul>
-                <li><a href="#">Работы</a></li>
-                <li><a href="#">Статьи</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
-<main id="main">
-    <div id="content">
-        <div class="content-img" style="background-image: url('images/red_slope_without_a_track.jpg')"></div>
-        <div class="content-single container">
-            <h1>Title</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis, est fuga id incidunt iusto laboriosam minima natus, nisi optio quidem quis quod ratione repellat suscipit temporibus ut veniam voluptatibus?</p>
-            <h5>Lorem ipsum dolor sit amet, consectetur.</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis, est fuga id incidunt iusto laboriosam minima natus, nisi optio quidem quis quod ratione repellat suscipit temporibus ut veniam voluptatibus?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis, est fuga id incidunt iusto laboriosam minima natus, nisi optio quidem quis quod ratione repellat suscipit temporibus ut veniam voluptatibus?</p>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque beatae illo neque praesentium
-                provident qui quod recusandae sapiente voluptates?</h4>
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Dolorem error id neque numquam!</li>
-                <li>Animi cupiditate eaque iure minus.</li>
-                <li>Accusantium ex iure quia sed!</li>
-                <li>Ad blanditiis illo minima veniam?</li>
-            </ul>
-            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis, hic illo ipsa ipsam
-                repellendus!</h5>
-            <ol>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ipsam ipsum iste provident quam
-                    voluptates voluptatibus voluptatum! Cumque dolores illum neque placeat quia rem voluptas? Atque
-                    deserunt expedita maiores praesentium!
-                </li>
-                <li>Esse itaque sed vel. Ex fuga, hic magnam nobis nostrum quas quia. Adipisci beatae consectetur dicta
-                    distinctio dolorem ducimus, ea earum ex harum inventore, magnam minima possimus repellendus, sequi
-                    voluptas.
-                </li>
-                <li>Adipisci aliquid animi aut delectus deleniti dolorem eligendi est eveniet expedita facilis illo
-                    impedit incidunt laborum nihil nobis perferendis perspiciatis quae quas recusandae sequi sit, totam
-                    unde vel veniam vero.
-                </li>
-                <li>Adipisci asperiores commodi dicta, dignissimos distinctio doloremque, error eveniet expedita fugit
-                    iste minima nihil nostrum nulla numquam optio perferendis quaerat quibusdam quo reprehenderit saepe
-                    sapiente suscipit tempora vel velit voluptas!
-                </li>
-                <li>A aspernatur consequuntur debitis dolor enim fugiat illum ipsam, pariatur qui, quos repellat rerum
-                    sunt tempore unde ut. Aperiam dolor earum nihil sit tempore. Dolorum eveniet natus quasi ut
-                    voluptas.
-                </li>
-            </ol>
-            <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
-            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam animi aspernatur consectetur deleniti ea enim ex fugiat itaque nesciunt, nihil, nostrum placeat praesentium quam quisquam quos sapiente soluta unde!</span><span>Quisquam sed tempora tempore? Laboriosam, optio, provident. Aliquam aperiam aut consectetur debitis doloremque, ducimus ipsam laudantium, maxime minus molestiae nostrum odit porro quis repellat totam vero voluptatibus voluptatum. Earum, nihil.</span><span>Architecto consequatur deleniti doloremque excepturi facere ipsum, officiis perferendis perspiciatis quo ratione, repellat, temporibus vitae. Accusantium aut commodi esse harum iste nam nostrum similique tenetur ut. Maiores quos voluptas voluptatum.</span><span>Accusamus aliquid aut, commodi consequuntur cumque dignissimos enim eos, est maxime nihil nobis non nostrum optio saepe tempora velit vitae! Accusantium aperiam asperiores autem cumque distinctio error inventore qui vitae.</span><span>Aliquam animi, assumenda, beatae blanditiis consequatur culpa cumque cupiditate harum hic illo inventore maxime nesciunt omnis optio perferendis quidem quis quo repudiandae sequi sit ut vel vero! Autem, doloremque, quo.</span>
-            </p>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci exercitationem natus neque non tempore? A alias asperiores assumenda, cum delectus dignissimos distinctio dolores expedita in, pariatur quaerat quam sed voluptates!</span><span>Adipisci autem debitis deleniti enim ex excepturi laborum magni minus necessitatibus odio porro, quae quas quidem quisquam, reiciendis rem sed suscipit, vero. Alias aliquid aperiam atque esse eum nihil similique.</span>
-            </p>
-            <blockquote cite="http://www.worldwildlife.org/who/index.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis consequuntur corporis enim esse, illo inventore iure nemo nulla optio pariatur quos temporibus, veritatis! Dolorem enim eveniet molestias nesciunt ratione!</blockquote>
-            <h4>Lorem ipsum dolor.</h4>
-            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad consequuntur deleniti eos, esse expedita fugit modi molestias nobis optio placeat provident quas quasi quis ratione reiciendis rem tempora voluptates!</span><span>At blanditiis ea labore odio, optio quam recusandae veniam! Ad assumenda cupiditate maxime repudiandae voluptatum. Asperiores ducimus eaque eius expedita in magnam perspiciatis sunt tempore? Asperiores culpa cum quidem sapiente.</span>
-            </p>
-            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, vitae?</h5>
-            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium cum distinctio doloremque nemo non quia quis sint. Dolorem, doloribus eum iusto labore maiores necessitatibus officiis quam sapiente? Nam, tempore!</span><span>Accusantium alias asperiores beatae dolor, doloremque eligendi esse excepturi, exercitationem impedit in ipsum magnam magni nemo neque nulla, pariatur perspiciatis placeat praesentium quasi quod rem rerum sapiente soluta suscipit vero?</span>
-            </p>
-        </div>
-    </div>
-</main>
-<footer id="footer" class="wavegrid">
-    <div class="container">
-        <div class="copyrights">
-            <img src="images/logo.svg" alt="Logotype">
-            <section>
-                <div>Астрасад 2017 &copy;</div>
-                <div>Все права защищены</div>
-            </section>
-        </div>
-        <div class="footer-contact-info">
-            <span>Связаться с нами:</span>
-            <ul>
-                <li>
-                    <a href="mailto:info@astrasad.com.ua">info@astrasad.com.ua</a>
-                </li>
-                <li>
-                    <a href="tel:+380687074141">+380 68 707 41 41</a>
-                </li>
-            </ul>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>

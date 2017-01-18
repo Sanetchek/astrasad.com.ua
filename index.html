@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АстраСад</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="lightslider/css/lightslider.css">
@@ -16,13 +17,11 @@
                 loop: true,
                 controls: true,
                 pager: true,
-                galleryMargin:24,
+                galleryMargin:0,
                 thumbMargin:0,
                 thumbItem: 6,
                 gallery: true,
                 enableDrag:false,
-                cssEasing: 'linear',
-                currentPagerPosition: 'middle',
                 responsive : [
                     {
                         breakpoint:1080,
@@ -34,6 +33,12 @@
                         breakpoint:757,
                         settings: {
                             thumbItem: 4,
+                        }
+                    },
+                    {
+                        breakpoint:550,
+                        settings: {
+                            gallery: false,
                         }
                     }
                 ],

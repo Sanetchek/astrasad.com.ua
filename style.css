@@ -335,7 +335,9 @@ a img {
         height: 520px;
     }
 
-.content-single {}
+.content-single {
+    padding: 0 5px;
+}
     #content .content-single h1 {
         padding: 30px 80px;
         font-family: 'RobotoLight', sans-serif;
@@ -447,4 +449,14 @@ blockquote {
         margin-bottom: 3px;
     }
 
+}
+
+@media all and (max-width: 400px) {
+    #footer .copyrights {
+        margin-top: 20px;
+    }
+    #footer .copyrights div {
+        display: block;
+        margin-right: 0px;
+    }
 }
