@@ -235,11 +235,11 @@ a img {
 
 .wrapper {
     position: absolute;
-    max-width: 607px;
+    max-width: 610px;
     overflow: hidden;
     bottom: 30px;
     left: 50%;
-    margin-left: -304px;
+    margin-left: -305px;
 }
 
 #lightSlider {
