@@ -239,7 +239,7 @@ a img {
     overflow: hidden;
     bottom: 30px;
     left: 50%;
-    margin-left: -25%;
+    margin-left: -304px;
 }
 
 #lightSlider {
@@ -413,13 +413,13 @@ blockquote {
     }
     .wrapper {
         max-width: 481px;
-        margin-left: -20%;
+        margin-left: -240px;
     }
 }
 @media all and (max-width: 900px) {
     .wrapper {
         max-width: 470px;
-        margin-left: -26%;
+        margin-left: -235px;
     }
 }
 
@@ -432,7 +432,7 @@ blockquote {
     }
     .wrapper {
         max-width: 350px;
-        margin-left: -24%;
+        margin-left: -175px;
     }
 }
 
