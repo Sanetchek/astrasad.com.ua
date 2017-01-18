@@ -413,12 +413,6 @@ blockquote {
         margin-left: -240px;
     }
 }
-@media all and (max-width: 900px) {
-    .wrapper {
-        max-width: 470px;
-        margin-left: -235px;
-    }
-}
 
 @media all and (max-width: 757px) {
     #nav-menu {
@@ -428,7 +422,7 @@ blockquote {
         display: block;
     }
     .wrapper {
-        max-width: 350px;
+        max-width: 353px;
         margin-left: -175px;
     }
 }
