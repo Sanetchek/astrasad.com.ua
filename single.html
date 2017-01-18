@@ -197,5 +197,27 @@
         </div>
     </footer>
 
+    <script  type="text/javascript">
+        jQuery(document).ready(function ($){
+            /*if ( $( window ).width() < 1200 ) {
+             $('#slider > li').css('background-image', "url(' <?php the_post_thumbnail_url('thumbnail'); ?> ')");
+             } */
+
+            $('#toggle-menu div > ul li').has('ul').bind('click',function(){
+                $(this).children('ul').slideToggle("slow");
+                return false;
+            });
+            $('#toggle-button img').bind('click',function(){
+                if ( $('#toggle-button img').attr('src') === 'images/menu.svg' ) {
+                    $('#toggle-button img').attr('src', 'images/cross.svg');
+                } else {
+                    $('#toggle-button img').attr('src', 'images/menu.svg');
+                }
+
+                $('#toggle-nav-menu').slideToggle("slow");
+                return false;
+            });
+        });
+    </script>
 </body>
 </html>
