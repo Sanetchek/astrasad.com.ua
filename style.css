@@ -321,12 +321,12 @@ a img {
         color: #fff;
         z-index: 1;
         padding-top: 95px;
-        font-size: 50px;
+        font-size: 44px;
         font-family: 'RobotoRegular', sans-serif;
     }
 
 .content-single {
-    padding: 0 5px;
+    padding: 20px 5px 0;
 }
     #content .content-single h1 {
         padding: 30px 80px;
