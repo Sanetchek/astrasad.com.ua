@@ -242,6 +242,15 @@ a img {
     margin-left: -305px;
 }
 
+.overlay {
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 #lightSlider {
     position: relative;
     top: 5px;
@@ -262,32 +271,6 @@ a img {
         position: absolute;
         top: 0px;
         left: 0px;
-    }
-
-#main .lSSlideOuter  h3 {
-    text-align: center;
-    margin-top: 29.5px;
-    overflow: hidden;
-    font-size: 22px;
-    font-weight: normal;
-}
-    #main .lSSlideOuter  h3:before,
-    #main .lSSlideOuter  h3:after {
-        content: '';
-        display: inline-block;
-        vertical-align: middle;
-        box-sizing: border-box;
-        width: 179.5px;
-        height: 1.25px;
-        background: #1D1D1B;
-        border: solid #EEE;
-        border-width: 0 29px;
-    }
-    #main .lSSlideOuter  h3:before {
-        margin-left: -100%;
-    }
-    #main .lSSlideOuter  h3:after {
-        margin-right: -100%;
     }
 
 #main .offers {
@@ -329,7 +312,17 @@ a img {
         background-attachment: fixed;
         background-position: bottom;
         background-size: cover;
-        height: 520px;
+        height: 270px;
+        position: relative;
+    }
+    #content .content-img h1 {
+        text-align: center;
+        position: relative;
+        color: #fff;
+        z-index: 1;
+        padding-top: 95px;
+        font-size: 50px;
+        font-family: 'RobotoRegular', sans-serif;
     }
 
 .content-single {
