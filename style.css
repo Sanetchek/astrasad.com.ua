@@ -310,7 +310,6 @@ a img {
 }
     #content .content-img {
         background-attachment: fixed;
-        background-position: bottom;
         background-size: cover;
         height: 270px;
         position: relative;
