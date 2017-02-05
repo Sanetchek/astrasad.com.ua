@@ -5,46 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АстраСад</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="lightslider/css/lightslider.css">
+    <link rel="stylesheet" href="bxslider/jquery.bxslider.css">
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="lightslider/js/lightslider.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#lightSlider").lightSlider({
-                item: 1,
-                slideMove: 1,
-                slideMargin: 10,
-                auto: true,
-                loop: true,
-                pause: 6000,
-                controls: true,
-                pager: true,
-                galleryMargin:0,
-                thumbMargin:28,
-                thumbItem: 5,
-                gallery: true,
-                enableDrag:false,
-                responsive : [
-                    {
-                        breakpoint:1080,
-                        settings: {
-                            thumbItem: 4
-                        }
-                    },
-                    {
-                        breakpoint:1024,
-                        settings: {
-                            gallery: false
-                        }
-                    }
-                ],
-
-                onSliderLoad: function (el) {
-                    $('.lSGallery').wrap('<div class="wrapper"></div>');
-                }
-            });
-        });
-    </script>
+    <script type="text/javascript" src="bxslider/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
     <header id="header" class="container">
@@ -153,23 +117,40 @@
     </header>
     <main id="main">
         <div class="slider">
-            <ul id="lightSlider">
-                <li data-thumb="images/thumb/red_slope_without_a_track.jpg" style="background-image: url('images/red_slope_without_a_track.jpg');">
+            <ul class="bxslider">
+                <li style="background-image: url('images/red_slope_without_a_track.jpg');">
                     <div class="overlay"></div>
                 </li>
-                <li data-thumb="images/thumb/B.jpg" style="background-image: url('images/B.jpg');height: 550px;background-size: cover;">
+                <li style="background-image: url('images/B.jpg');height: 550px;background-size: cover;">
                     <div class="overlay"></div>
                 </li>
-                <li data-thumb="images/thumb/light.jpg" style="background-image: url('images/light.jpg');">
+                <li style="background-image: url('images/light.jpg');">
                     <div class="overlay"></div>
                 </li>
-                <li data-thumb="images/thumb/red_slope_without_a_track.jpg" style="background-image: url('images/red_slope_without_a_track.jpg');">
+                <li style="background-image: url('images/red_slope_without_a_track.jpg');">
                     <div class="overlay"></div>
                 </li>
-                <li data-thumb="images/thumb/B.jpg" style="background-image: url('images/B.jpg');">
+                <li style="background-image: url('images/B.jpg');">
                     <div class="overlay"></div>
                 </li>
             </ul>
+            <div id="bx-pager">
+                <a data-slide-index="0" href="">
+                    <img src="images/red_slope_without_a_track.jpg" alt="red_slope_without_a_track">
+                </a>
+                <a data-slide-index="1" href="">
+                    <img src="images/B.jpg" alt="B">
+                </a>
+                <a data-slide-index="2" href="">
+                    <img src="images/light.jpg" alt="light">
+                </a>
+                <a data-slide-index="3" href="">
+                    <img src="images/red_slope_without_a_track.jpg" alt="red_slope_without_a_track">
+                </a>
+                <a data-slide-index="4" href="">
+                    <img src="images/B.jpg" alt="B">
+                </a>
+            </div>
         </div>
         <div class="offers container">
             <h3>Мы предлагаем</h3>
