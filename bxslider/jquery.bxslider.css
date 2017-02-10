@@ -16,6 +16,10 @@
     margin: -125px auto 0 !important;
 }
 
+.bx-wrapper .bx-viewport {
+    height: 520px !important;
+}
+
 .bxslider li {
 	height: 520px;
 	background-repeat: no-repeat;
@@ -30,6 +34,7 @@
 #bx-pager a img {
     border-radius: 50%;
     width: 95px;
+	height: 95px;
     border: 2px solid #fff;
 }
 
