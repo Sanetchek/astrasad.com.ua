@@ -18,6 +18,7 @@
 
 .bx-wrapper .bx-viewport {
     height: 520px !important;
+    overflow: hidden;
 }
 
 .bxslider li {
